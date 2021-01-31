@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F6A1607-4D42-483E-93D5-AD430EEFB1E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trucks</RootNamespace>
+    <AssemblyName>Trucks</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Lavoro\Damacon\GestionaleTrasporti\ProvaPubblica\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Trucks</ProductName>
+    <PublisherName>Damacon</PublisherName>
+    <SuiteName>Trucks</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B55767B5608A8BF452FA03B322BBEDD20D34EC52</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Trucks_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Trucks1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web">
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsDataBase.cs" />
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="clsReport.cs" />
+    <Compile Include="clsSetting.cs" />
+    <Compile Include="crpAnagArticoli.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpAnagArticoli.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpAnagCliente1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpAnagCliente1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpAnagClienti.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpAnagClienti.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpDocFat1.cs">
+      <DependentUpon>crpDocFat1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="crpDocFatFinePag.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpDocFatFinePag.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpDocFattura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpDocFattura.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpAnagAutomezzi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpAnagAutomezzi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpDocFatturaBreve1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpDocFatturaBreve.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpDocumenti.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpDocumenti.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpDocViaggi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpDocViaggi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpScadenziario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpScadenziario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpVuoto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpVuoto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crTest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crTest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutBox.Designer.cs">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBanche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanche.Designer.cs">
+      <DependentUpon>frmBanche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistanze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistanze.Designer.cs">
+      <DependentUpon>frmDistanze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocumenti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocumenti.Designer.cs">
+      <DependentUpon>frmDocumenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpostazioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpostazioni.Designer.cs">
+      <DependentUpon>frmImpostazioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocViaggi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocViaggi.Designer.cs">
+      <DependentUpon>frmDocViaggi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestTab.Designer.cs">
+      <DependentUpon>frmGestTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModAutomezzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModAutomezzi.Designer.cs">
+      <DependentUpon>frmModAutomezzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnagArticoli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnagArticoli.Designer.cs">
+      <DependentUpon>frmAnagArticoli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnagAutomezzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnagAutomezzi.Designer.cs">
+      <DependentUpon>frmAnagAutomezzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnagAzienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnagAzienda.Designer.cs">
+      <DependentUpon>frmAnagAzienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnagCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnagCliente.Designer.cs">
+      <DependentUpon>frmAnagCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModArticoli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModArticoli.Designer.cs">
+      <DependentUpon>frmModArticoli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModCliente.Designer.cs">
+      <DependentUpon>frmModCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModDocViaggi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModDocViaggi.Designer.cs">
+      <DependentUpon>frmModDocViaggi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModFattura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModFattura.Designer.cs">
+      <DependentUpon>frmModFattura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewPagamento.Designer.cs">
+      <DependentUpon>frmNewPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScadenziario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScadenziario.Designer.cs">
+      <DependentUpon>frmScadenziario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowReport.Designer.cs">
+      <DependentUpon>frmShowReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoPag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoPag.Designer.cs">
+      <DependentUpon>frmTipoPag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdipMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdipMain.Designer.cs">
+      <DependentUpon>mdipMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="crpAnagArticoli.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpAnagArticoli.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpAnagCliente1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpAnagCliente1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpAnagClienti.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpAnagClienti.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpDocFat1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpDocFat1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpDocFatFinePag.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpDocFatFinePag.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpDocFattura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpDocFattura.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpAnagAutomezzi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpAnagAutomezzi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpDocFatturaBreve.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpDocFatturaBreve1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpDocumenti.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpDocumenti.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpDocViaggi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpDocViaggi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpScadenziario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpScadenziario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpVuoto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpVuoto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crTest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crTest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutBox.resx">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBanche.resx">
+      <DependentUpon>frmBanche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistanze.resx">
+      <DependentUpon>frmDistanze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocumenti.resx">
+      <DependentUpon>frmDocumenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpostazioni.resx">
+      <DependentUpon>frmImpostazioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnagArticoli.resx">
+      <DependentUpon>frmAnagArticoli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnagAutomezzi.resx">
+      <DependentUpon>frmAnagAutomezzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnagAzienda.resx">
+      <DependentUpon>frmAnagAzienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnagCliente.resx">
+      <DependentUpon>frmAnagCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocViaggi.resx">
+      <DependentUpon>frmDocViaggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestTab.resx">
+      <DependentUpon>frmGestTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModArticoli.resx">
+      <DependentUpon>frmModArticoli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModAutomezzi.resx">
+      <DependentUpon>frmModAutomezzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModCliente.resx">
+      <DependentUpon>frmModCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModDocViaggi.resx">
+      <DependentUpon>frmModDocViaggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModFattura.resx">
+      <DependentUpon>frmModFattura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewPagamento.resx">
+      <DependentUpon>frmNewPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScadenziario.resx">
+      <DependentUpon>frmScadenziario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowReport.resx">
+      <DependentUpon>frmShowReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoPag.resx">
+      <DependentUpon>frmTipoPag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdipMain.resx">
+      <DependentUpon>mdipMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Trucks1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
